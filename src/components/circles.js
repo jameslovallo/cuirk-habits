@@ -133,10 +133,10 @@ circles.init = () => {
 							}
 							return /* html */ `
 									<li>
-										<div>
+										<a href="/editor?table=Middle&id=${id}">
 											<img src="${Icon}"/>
-										</div>
-										<a href="/editor?table=Middle&id=${id}">${Name}</a>
+											${Name}
+										</a>
 										<button data-id="${id}" data-done="${DoneToday}">
 											<span>${DoneToday}</span>
 											${icon('cancel')}
@@ -187,10 +187,10 @@ circles.init = () => {
 							}
 							return /* html */ `
 									<li>
-										<div>
+										<a href="/editor?table=Inner&id=${id}">
 											<img src="${Icon}"/>
-										</div>
-										<a href="/editor?table=Inner&id=${id}">${Name}</a>
+											${Name}
+										</a>
 										<button data-id="${id}" data-done="${DoneToday}">
 											<span>${DoneToday}</span>
 											${icon('cancel')}
@@ -314,17 +314,29 @@ circles.style = scss`
 				padding: 0.5rem;
 
 				li {
-					grid-template-columns: 2.5rem 1fr 3rem;
+					gap: 1rem;
+					grid-template-columns: 1fr 3.25rem;
 
 					> * {
+						border-radius: 0.5rem;
 						padding: 0.25rem;
 					}
 
+					a {
+						align-items: center;
+						display: flex;
+						gap: 0.75rem;
+
+						img {
+							width: 2rem;
+						}
+					}
+
 					button {
-						border-radius: 0.5rem;
 						color: #ccc;
 						gap: 0.5rem;
 						height: auto;
+						padding-left: 0.5rem;
 					}
 				}
 			}
