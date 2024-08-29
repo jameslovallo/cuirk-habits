@@ -1,0 +1,10 @@
+{
+	"type": "module",
+	"dependencies": {
+		"cuirk": "^0.0.84"
+	},
+	"scripts": {
+		"dev": "cuirk dev",
+		"build": "cuirk build"
+	}
+}

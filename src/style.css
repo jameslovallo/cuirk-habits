@@ -1,0 +1,76 @@
+:root {
+	--active: #bdbdbd;
+	--dormant: #64b5f6;
+	--failure: #e57373;
+	--in-progress: #ffb74d;
+	--success: #81c784;
+	--c-primary: var(--active);
+	--nav: transparent;
+	--nav-color: black;
+	background: url(/src/images/Phantom\ Oasis.png) no-repeat center center /
+		cover;
+	background-attachment: fixed;
+	color-scheme: dark;
+	font-family: sans-serif;
+}
+
+:root,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+svg {
+	display: block;
+	fill: currentColor;
+}
+
+nav {
+	color: inherit;
+	font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 1px black;
+}
+
+main {
+	max-width: 70ch;
+	margin: 0 auto 3rem;
+	padding: 1rem;
+	text-shadow: 1px 1px 1px black;
+}
+
+.surface {
+	backdrop-filter: blur(0.5rem);
+	background: #000b;
+	border: 0;
+	border-radius: 1rem;
+	color: white;
+	overflow: hidden;
+	text-shadow: none;
+}
+
+.header-input {
+	background: #fff1;
+	border: 0;
+	font-size: 1rem;
+	outline: none;
+	padding: 1rem 1rem 0.5rem;
+	width: 100%;
+}
+
+.header-input::placeholder {
+	color: #ccc;
+}
+
+a,
+button {
+	cursor: pointer;
+}
