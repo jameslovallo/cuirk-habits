@@ -314,7 +314,7 @@ circles.style = scss`
 				padding: 0.5rem;
 
 				li {
-					gap: 1rem;
+					gap: 0.5rem;
 					grid-template-columns: 1fr 3.25rem;
 
 					> * {
