@@ -4,11 +4,8 @@
 	--failure: #e57373;
 	--in-progress: #ffb74d;
 	--success: #81c784;
-	--c-primary: var(--active);
 	--nav: transparent;
-	--nav-color: black;
-	background: url(/src/images/Phantom\ Oasis.png) no-repeat center center /
-		cover;
+	background: url(/src/images/1.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
 	color-scheme: dark;
 	font-family: sans-serif;
