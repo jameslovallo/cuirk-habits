@@ -1,8 +1,8 @@
-import { componentScripts, componentStyles, html } from 'cuirk'
-import * as components from '../components/index.js'
-import navLinks from '../data/nav.js'
+import { componentScripts, componentStyles, html } from "cuirk";
+import * as components from "../components/index.js";
+import navLinks from "../data/nav.js";
 
-const { footer, pageMeta, nav } = components
+const { footer, pageMeta, nav } = components;
 
 export default ({ meta, children }) => {
 	return html`
@@ -15,12 +15,12 @@ export default ({ meta, children }) => {
 				${pageMeta(meta)}
 			</head>
 			<body>
-				${nav({ links: navLinks })}
+				<!-- {nav({ links: navLinks })} -->
 				<main>${children}</main>
-				${footer({ links: navLinks })}
+				<!-- {footer({ links: navLinks })} -->
 				<!-- component scripts -->
 				${componentScripts(components)}
 			</body>
 		</html>
-	`
-}
+	`;
+};
